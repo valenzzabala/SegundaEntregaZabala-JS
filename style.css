@@ -1,0 +1,127 @@
+* Para ver con dom4.js */
+/* Para ver con dom4.js */
+/* Para ver con dom4.js */
+
+
+.texto-alerta {
+    color:red;
+    font-size: 5vh;
+}
+
+.texto-reversa {
+    color: var(--color3);
+    rotate: 180deg;
+}
+
+/* Para ver con dom4.js */
+/* Para ver con dom4.js */
+/* Para ver con dom4.js */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --color1: #FF2E63;
+    --color2: #08D9D6;
+    --color3: #EAEAEA;
+    --bg-color: #161920;
+}
+
+
+html {
+    height: 100vh;
+}
+
+html, body {
+    background-color: var(--bg-color);
+}
+
+body {
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: solid var(--color3) 2px;
+}
+
+h1, h4, h5, p {
+    margin:0;
+}
+
+h1 {
+    font-size: 3vh;
+    color: #EAEAEA;
+}
+
+
+h4 {
+    margin-bottom: 5vh;
+    margin-right: -2vw;
+
+    letter-spacing: 2vw;
+    font-size: 10vh;
+    color: var(--color2);
+    
+    text-shadow: 0px 0px 1vh;
+    animation: color_change 50s infinite;
+}
+
+p {
+    font-size:2vh;
+    color:#EAEAEA;
+}
+
+
+#padre {
+    width: 40%;
+    padding: 2vh 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--color3);
+    border: var(--color1) 2px solid;
+}
+
+
+.hijo {
+    margin: 1vh;
+    padding: 1vh;
+    border: solid var(--color2) 2px;
+}
+
+
+
+body > div {
+    color: var(--bg-color);
+}
+
+
+
+
+
+@keyframes neon {
+    25% {text-shadow: 0 0 4vh;}
+    50% {text-shadow: 0 0 10vh;}
+    75% {text-shadow: 0 0 8vh;}
+}
+
+@keyframes color_change {
+    35% {color: #3dd908}
+    75% {color: #c2d919}
+}
